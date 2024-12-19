@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "zed-point-charge",
+    "slug": "zed-point-charge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Splash.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pointCharge.firebase",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Splash.png",
+        "backgroundColor": "#ffff"
+      },
+      "package": "com.pointCharge.firebase",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {},
+    "plugins": [
+      "expo-router",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsVersion": "11.0.0",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoibWFobW91ZGZhdGh5MTk5NyIsImEiOiJjbTR0dm93eTYwODZ6MmtyOTF1eW9rZ3UxIn0.JVLYwxjiJYdwcXcvgUWQWg"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/Splash.png",
+          "imageWidth": 200,
+          "backgroundColor": "#fff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c55f2887-5002-41ce-ae12-16657caa455a"
+      }
+    }
+  }
+}
